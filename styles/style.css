@@ -3,3 +3,26 @@
 @import url(./a11y.css);
 @import url(./theme.css);
 @import url(./base.css);
+
+/* 미디어쿼리가 없으면 공통 스타일 */
+/* 미디어쿼리를 이용해서 뷰 포트마다 다르게 나오게 하기 */
+
+/* 공통 스타일 */
+
+body{
+  background-color: var(--yellow);
+}
+
+@media(min-width: 240px) and (max-width: 768px){
+  body{
+    background-color: var(--green);
+  }
+}
+
+/* 중단점 - 769px 이상 */
+
+@media(min-width: 769px){
+  body{
+    background-color: var(--blue);
+  }
+}

@@ -8,9 +8,12 @@ body *::after {
   box-sizing: border-box;
 }
 
-[class] {
+/* 클래스가 있을 때만 마진이 없게 하려고! 클래스가 없으면 마진이 있음 */
+/* [class] 클래스를 준 요소들에 해당 속성을 주는 것 */
+/* [class] {
   margin: 0;
-}
+} */
+/* 현재 normalize.css 때문에 의미가 없음..! */
 
 a {
   color: inherit;
@@ -27,12 +30,15 @@ body {
 }
 
 /* 유연한 미디어 */
+/* 미디어 크기 제어 */
 img {
+  /* 최대값. 부모이미지 만큼은 커지지만, 원래 이미지 만큼 커지지 않음 */
   max-width: 100%;
   height: auto;
 }
 
 video {
+  /* 무조건 부모영역 만큼 커짐 */
   width: 100%;
   height: auto;
 }
