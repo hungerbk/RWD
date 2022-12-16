@@ -108,54 +108,66 @@ input[type="search"] {
     flex-grow: 1;
   }
 
-  /* 모바일 제어 버튼 시작 */
-  .buttonWrapper{
-    background: gold;
-  }
+   /* 모바일 메인메뉴 제어버튼 */
 
-  .button--burger{
-    width: 30px;
-    height: 30px;
-    background: blue;
-    position: relative;
+  .buttonWrapper {
+    padding: 0.25rem;
     overflow: hidden;
+    position: absolute;
+    top: 3.75rem;
+    right: var(--spacing-lg);
+    transform: translate(-0.25rem, -0.25rem);
   }
 
-  [class*="button--burgerBar"]{
-    background: var(--white);
+  .button--burger {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .button--burger:focus {
+    /* 아웃라인 식별 용이하게 하려고 */
+    outline-offset: 2px;
+  }
+
+  .button--burgerBarTop,
+  .button--burgerBarMiddle,
+  .button--burgerBarBottom {
+    position: absolute;
     width: 100%;
     height: 20%;
-    border-radius: 10px;
-    position: absolute;
+    background: var(--white);
+    border-radius: 0.25rem;
     left: 0;
     transition: all 200ms;
   }
 
-  .button--burgerBarTop{
+  .button--burgerBarTop {
     top: 0;
   }
-  .button--burgerBarMiddle{
+
+  .button--burgerBarMiddle {
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
-  .button--burgerBarBottom{
+
+  .button--burgerBarBottom {
     top: 100%;
     transform: translateY(-100%);
   }
 
-  .is--active .button--burgerBarTop{
+  .button--burger.is--active .button--burgerBarTop {
     top: 50%;
-    transform: translate(0%, -50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(45deg);
   }
-  .is--active .button--burgerBarMiddle{
-    transform: translate(-100%, -50%);
+  .button--burger.is--active .button--burgerBarMiddle {
+    transform: translate(-150%, -50%);
   }
-  .is--active .button--burgerBarBottom{
+  
+  .button--burger.is--active .button--burgerBarBottom {
     top: 50%;
-    transform: translate(0%, -50%) rotate(45deg);
+    transform: translateY(-50%) rotate(-45deg);
   }
-
-  /* 모바일 제어 버튼 종료 */
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -183,8 +195,36 @@ input[type="search"] {
     width: 25rem;
   }
 
+  /* 데스크탑 메인 메뉴 제어 버튼 */
   .button--burger {
     display: none;
+  }
+
+  /* 데스크탑 메인 메뉴 */
+  .menu{
+    background: var(--secondary-color);
+  }
+
+  .menu__list{
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  
+  .menu__item{
+    padding: var(--spacing-sm) 0;
+  }
+
+  .menu__link {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: var(--spacing-base) var(--spacing-lg);
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 }
 
