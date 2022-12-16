@@ -201,29 +201,27 @@ input[type="search"] {
   }
 
   /* 데스크탑 메인 메뉴 */
-  .menu{
+  .menu {
     background: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
   }
 
-  .menu__list{
+  .menu__list {
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-    color: var(--white);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-  }
-  
-  .menu__item{
-    padding: var(--spacing-sm) 0;
+    align-items: center;
   }
 
   .menu__link {
     display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--white);
     font-size: 1.2rem;
     font-weight: 700;
-    padding: var(--spacing-base) var(--spacing-lg);
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 }
