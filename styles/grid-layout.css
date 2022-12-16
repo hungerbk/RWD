@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.group1 {
+  background: gold;
+}
+.group2 {
+  background: pink;
+}
+.group3 {
+  background: lightgreen;
+}
+.group4 {
+  background: skyblue;
+}
+.group5 {
+  background: salmon;
+}
+.group6 {
+  background: violet;
+}
+.group7 {
+  background: aquamarine;
+}
+.group8 {
+  background: lightseagreen;
+}
+.group9 {
+  background: MediumPurple;
+}
+.group10 {
+  background: MidnightBlue;
+}
+.group11 {
+  background: Olive;
+}
+.group12 {
+  background: SandyBrown;
+}
+
+.container {
+  background: silver;
+  border: 1px solid red;
+  display: grid;
+  grid-template-rows: auto;
+  padding: 24px;
+  gap: 24px;
+}
+
+[class*="group"]{
+  height: 150px;
+}
+
+/* small device */
+@media (max-width: 767px){
+  .container{
+    /* grid에서 사용하는 새로운 단위. 분수임.. */
+    /* grid-template-columns: 1fr; */
+    /* repeat 함수를 쓰면 컬럼 개수만큼 입력할 필요 없음 repeat(반복할 횟수, 반복할 값) */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* medium device */
+@media (min-width: 768px){
+  .container{
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* large device */
+@media (min-width: 1280px){
+  .container{
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .group1{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+  }
+}
+
