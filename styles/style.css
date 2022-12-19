@@ -120,7 +120,7 @@ input[type="search"] {
 .sprite{
   /* color: white; */
   height: 3.75rem;
-  background: blue url("./../images/sprite_main.png") no-repeat;
+  background: url("./../images/sprite_main.png") no-repeat;
   padding-left: 4rem;
 }
 
@@ -144,29 +144,45 @@ input[type="search"] {
   background-position: 0 -460px;
 }
 
+.accentBook{
+  color: var(--accent-book);
+}
+.accentBoard{
+  color: var(--accent-board);
+}
+.accentNews{
+  color: var(--accent-news);
+}
+.accentFavorite{
+  color: var(--accent-favorite);
+}
+.accentTwitter{
+  color: var(--accent-twitter);
+}
+
 /* 공통 추천 서적 */
 .book{
-  background: lightgreen;
+  /* background: lightgreen; */
   grid-area: book;
 }
 /* 공통 새소식 */
 .news{
-  background: yellow;
+  /* background: yellow; */
   grid-area: news;
 }
 /* 공통 게시판 */
 .board{
-  background: blue;
+  /* background: blue; */
   grid-area: board;
 }
 /* 공통 인기 사이트 */
 .favorite{
-  background: pink;
+  /* background: pink; */
   grid-area: favorite;
 }
 /* 공통 트위터 */
 .twitter{
-  background: aqua;
+  /* background: aqua; */
   grid-area: twitter;
 }
 
