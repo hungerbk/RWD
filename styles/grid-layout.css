@@ -50,20 +50,32 @@ body {
   margin: 50px;
   display: grid;
   gap: 24px ;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: repeat(3, 200px);
+}
+
+.group1 {
+  grid-area: box1;
+}
+.group2 {
+    grid-area: box2;
+}
+.group3 {
+  grid-area: box3;
+}
+.group4 {
+  grid-area: box4;
+}
+.group5 {
+  grid-area: box5;
 }
 
 /* 모바일 레이아웃 */
 @media(max-width: 768px){
   .container{
     grid-template-columns: 1fr 1fr;
-  }
-
-  .group2{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-template-areas: "box2 box2" 
+                          "box1 box3" 
+                          "box4 box5";
   }
 }
 
@@ -71,27 +83,9 @@ body {
 @media(min-width:769px){
   .container{
     grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2" 
+    "box1 box1 box1 box1 box5 box5 box5 box5 box5 box4 box4 box4" 
+    "box1 box1 box1 box1 . box3 box3 box3 box3 box3 box3 box3";
   }
-
-  .group1{
-    grid-area: 2/1/4/5;
-  }
-
-  .group2{
-    grid-column: 1/13;
-    grid-row: 1/2;
-  }
-
-  .group3{
-    grid-area: 3/6/4/13;
-  }
-
-  .group4{
-    grid-area: 2/5/3/10;
-  }
-
-  .group5{
-    grid-area: 2/10/3/13;
-  }
-
 }
