@@ -225,6 +225,7 @@ input[type="search"] {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .board__title {
@@ -237,6 +238,7 @@ input[type="search"] {
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-sm);
+  width: 100%;
 }
 
 .board__item {
@@ -251,7 +253,7 @@ input[type="search"] {
   플렉스 만으로는 줄바꿈이 발생해도 적용이 안됨. 줄바꿈이 없으면 옆의 board__date를 밀어냄
   -> 화이트 스페이스를 사용 */
   /* 줄바꿈 금지 */
-  /* white-space: nowrap; */
+  white-space: nowrap;
   /* 화이트 스페이스를 적용하면 부모영역보다 커지는 오류 발생.. 아직 해결 안 됨. 지금은 제목 영역이 두줄로 나오게 함 */
   overflow: hidden;
   text-overflow: ellipsis;
