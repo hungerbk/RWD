@@ -107,14 +107,14 @@ input[type="search"] {
 
 /* 공통 메인 컨텐츠 섹션 제목 */
 
-[class*="__title"] {
+.appMain [class*="__title"] {
   margin-bottom: var(--spacing-base);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
 
-[class*="__koTitle"] {
+.appMain [class*="__koTitle"] {
   font-size: var(--text-md);
   font-weight: 700;
 }
@@ -160,6 +160,12 @@ input[type="search"] {
 }
 .accentTwitter {
   color: var(--accent-twitter);
+}
+
+/* 공통 메인 콘텐츠 섹션 본문 */
+.appMain [class*="__summary"] {
+  line-height: 1.6;
+  margin-top: var(--spacing-base);
 }
 
 /* 공통 추천 서적 */
