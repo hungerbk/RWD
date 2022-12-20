@@ -45,11 +45,11 @@ video {
 
 /* 가로가 100%일 때 세로는 56.25% (16:9비율) */
 /* 반응형 Iframe */
-.iframeWrapper {
-  /* width: 100%;
+/* .iframeWrapper { */
+/* width: 100%;
   height: 0 !important; */
-  position: relative;
-}
+/* position: relative; */
+/* } */
 
 .iframeRatio-21-9 {
   /* padding-top: 42.857142857142855%; */
@@ -71,9 +71,10 @@ video {
   aspect-ratio: 1/1;
 }
 .iframeWrapper iframe {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+  display: block;
   width: 100%;
   height: 100%;
 }
