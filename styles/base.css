@@ -46,7 +46,6 @@ video {
 /* 가로가 100%일 때 세로는 56.25% (16:9비율) */
 /* 반응형 Iframe */
 .iframeWrapper {
-  background-color: blueviolet;
   /* width: 100%;
   height: 0 !important; */
   position: relative;

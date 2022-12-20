@@ -407,7 +407,6 @@ input[type="search"] {
 
   /* 데스크탑 메인 컨텐츠 */
   .appMain {
-    border: 5px solid red;
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
