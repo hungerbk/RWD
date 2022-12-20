@@ -245,8 +245,12 @@ input[type="search"] {
 }
 
 .board__link {
+  /* 빈 공간을 모두 채움, 공간이 부족하면 축소함 */
   flex: 1 1 auto;
+  /* 줄바꿈 금지 */
   white-space: nowrap;
+  /* 텍스트가 넘치면 .. 으로 처리하기 (플렉스 만으로는 줄바꿈이 발생해도 적용이 안됨. 줄바꿈이 없으면 옆의 board__date를 밀어냄
+  -> 화이트 스페이스를 사용 */
   overflow: hidden;
   text-overflow: ellipsis;
 }
