@@ -190,7 +190,7 @@ input[type="search"] {
   align-items: center; */
 }
 .book__coverCaption {
-  margin-trim: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
   line-height: 1.6;
 }
 .book__info {
