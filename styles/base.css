@@ -37,9 +37,36 @@ img {
   height: auto;
 }
 
-video,
-iframe {
+video {
   /* 무조건 부모영역 만큼 커짐 */
   width: 100%;
   height: auto;
+}
+
+/* 가로가 100%일 때 세로는 56.25% (16:9비율) */
+/* 반응형 Iframe */
+.iframeWrapper {
+  background-color: blueviolet;
+  width: 100%;
+  height: 0 !important;
+  position: relative;
+}
+
+.iframeRatio-16-9 {
+  padding-top: 56.25%;
+}
+
+.iframeRatio-21-9 {
+  padding-top: 42.857142857142855%;
+}
+
+.iframeRatio-4-3 {
+  padding-top: 75%;
+}
+.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

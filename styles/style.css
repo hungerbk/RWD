@@ -218,6 +218,7 @@ input[type="search"] {
   margin-top: var(--spacing-base);
   text-align: right;
 }
+
 /* 공통 게시판 */
 .board {
   /* background: blue; */
