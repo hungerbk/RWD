@@ -37,7 +37,8 @@ img {
   height: auto;
 }
 
-video {
+video,
+iframe {
   /* 무조건 부모영역 만큼 커짐 */
   width: 100%;
   height: auto;
