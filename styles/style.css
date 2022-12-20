@@ -508,12 +508,7 @@ input[type="search"] {
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
-@media (-webkit-min-device-pixel-ratio: 2),
-  (min--moz-device-pixel-ratio: 2),
-  (-o-min-device-pixel-ratio: 2/1),
-  (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .logo__link {
     background-image: url(./../images/webcafe-logo@2x.png);
   }
