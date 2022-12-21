@@ -445,31 +445,32 @@ input[type="search"] {
   .appMain {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
+    grid-template-areas: "news news" "board favorite" "twitter book";
   }
 
   /* 태블릿 추천 서적 */
   .book {
-    grid-area: 3/2/4/2;
+    /* grid-area: 3/2/4/2; */
   }
 
-  /* 태블릭 새소식 */
+  /* 태블릿 새소식 */
   .news {
-    grid-area: 1/1/2/3;
+    /* grid-area: 1/1/2/3; */
   }
 
-  /* 태블릭 게시판 */
+  /* 태블릿 게시판 */
   .board {
-    grid-area: 2/1/3/2;
+    /* grid-area: 2/1/3/2; */
   }
 
-  /* 태블릭 인기 사이트 */
+  /* 태블릿 인기 사이트 */
   .favorite {
-    grid-area: 2/2/3/3;
+    /* grid-area: 2/2/3/3; */
   }
 
-  /* 태블릭 트위터 */
+  /* 태블릿 트위터 */
   .twitter {
-    grid-area: 3/1/4/2;
+    /* grid-area: 3/1/4/2; */
   }
 }
 
