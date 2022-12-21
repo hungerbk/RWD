@@ -311,6 +311,27 @@ input[type="search"] {
   margin-top: var(--spacing-xs);
 }
 
+/* 공통 푸터 */
+.appFooter {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: var(--text-sm);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-base);
+}
+
+/* 공통 주소 */
+.address {
+  /* margin: var(--spacing-base) 0; */
+}
+/* 공통 저작권 */
+.copyright {
+  /* margin: var(--spacing-base) 0; */
+  /* display: block; */
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -437,6 +458,17 @@ input[type="search"] {
     font-size: var(--text-sm);
     margin-left: var(--spacing-xs);
   }
+
+  /* 모바일 푸터 */
+  .aapFooter {
+    font-size: var(--text-sm);
+  }
+
+  /* 모바일 주소 */
+  .address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }
 
 /* 태블릿 디바이스 (Tablet Device) */
@@ -539,6 +571,11 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter {
+    align-items: center;
   }
 }
 
